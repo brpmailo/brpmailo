@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brpmailo">
+    <title>About Brp Mailo</title>
+    <link rel="icon" type="image/png" href="b.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, pink, blue);
+            color: white;
+            padding: 20px 10px;
+            font-size: 22px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile h1 {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Cursive', sans-serif;
+        }
+        button {
+            display: block;
+            margin: 15px auto;
+            background-color: darkred;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: purple;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+        footer a {
+            color: yellow;
+            text-decoration: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: blue;
+        }
+   
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: #fdfdfd;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-item h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: maroon;
+  }
+
+  .portfolio-item p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .visit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .visit-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+    .subscriber-counter {
+        font-size: 30px;
+        font-weight: bold;
+        color: purple;
+        text-align: center;
+        margin-top: 10px;
+        border: 4px solid red; 
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: maroon;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #backToTop:hover {
+        background: green;
+    }
+#contactForm {
+        max-width: 700px;
+        margin-top: 10px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        margin-top: 10px;
+        padding: 8px;
+        background-color: maroon;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkred;
+    }
+
+
+
+
+
+
+.option-container {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px;
+  justify-content: flex-start; 
+  align-items: center; 
+  }
+
+  .circle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .circle-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .yes-btn {
+    background-color: #28a745;
+  }
+
+  .no-btn {
+    background-color: #dc3545;
+  }
+
+  #formContainer {
+    display: none;
+    margin-top: 30px;
+  }
+
+
+  @media (max-width: 768px) {
+    #subscribe {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #subscribe img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+    <header>
+        <h1> About Brpmailo</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+	      <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="profile">
+            <img src="brp.jpg" alt="Brpmailo">
+            <h1>Brp Mailo</h1>
+        </div>
+        
+        <p><b>"Namaste! From Brp Mailo, an educator, IT professional, and web designer from Nepal, with a passion for both technology and literature."</b></p>
+
+        <!-- English Button -->
+        <button onclick="showDetails('english')">Click Me!</button>
+
+        <div id="extra-info-english" class="hidden">
+            <p><b>Brp Mailo</b>, an educator, IT professional, and web designer from Nepal, with a passion for both technology and literature. <b>I hold a Diploma in Computer Hardware and Software,</b> which has provided me with a solid foundation in computer systems, troubleshooting, and digital content creation.
+For the past three years, I have been working continuously in the <b>IT department</b> of <b><span style="color: green;">Lovely Angels English Boarding School</b></span>, where I currently serve as the Head of the IT Department. In this role, I manage the school's digital infrastructure, oversee system maintenance, and lead the integration of technology into the academic environment.
+I also have two years of experience as a graphic and layout designer at a printing press, where I designed a wide range of print materials including book covers, flyers, and educational resources. This enhanced my skills in visual design and layout techniques.
+Academically, I am pursuing a Bachelor’s degree in Nepali Literature under the Faculty of Education at Tribhuvan University. My love for literature blends well with my technical skills, enabling me to express creativity in both digital and literary fields.
+As a web designer, I have developed and sold over 10 professional website templates. I also run an educational website, baburamphuyal.com.np, where I provide notes, teacher guides, curriculum content, and literary materials for students and educators.
+Additionally, I manage a YouTube channel named "Hamro Computer Guru", where I create tutorials on MS Excel, computer basics, internet tools, and various digital skills, all in the Nepali language — aiming to make tech education accessible to all.<br><br>
+<h3><b><span style="color: blue;">My overall experience includes:</span><br></h3>
+3+ years leading the IT department in a school setting<br>
+2 years in graphic/layout design at a printing press<br>
+Strong foundation in computer hardware and software<br>
+Proficiency in HTML, CSS, JavaScript, and responsive web design<br>
+Creating educational and technical content for web and YouTube<br>
+</p>
+            <h3><span style="color: Red;">My Qualifications</span></h3>
+            <p>Bachelor's Degree in Education</p>
+            <p>IT Professional</p>
+	  <p>Web Designer</p>
+            <p>YouTuber</p>       
+            <p>Writer & Author</p>
+	  <p>Certified Basic Level Teacher</p></b>    
+           
+In addition to my technical work, I am actively involved in Nepali literature, focusing on Ghazals, Poem and Novel writing. My works are often inspired by personal experiences and are shared with emotional depth and lighthearted tones. I am currently working on a book compiling my Ghazals.<br>
+I value discipline, integrity, and ethical conduct, especially in education, and always promote self-learning and academic honesty. With my combined passion for technology and literature, I strive to inspire the youth of Nepal through both digital platforms and creative expression.
+        </div>
+
+        <!-- Nepali Button -->
+        <button onclick="showDetails('nepali')">बारेमा</button>
+
+        <div id="extra-info-nepali" class="hidden">
+            <p><b>बिआरपी माइलो</b> नेपालबाट एक शिक्षक, सूचना प्रविधि (IT) विज्ञ, र वेब डिजाइनर, जसलाई प्रविधि र साहित्य दुवैमा अत्यन्तै भोक छ। मैले कम्प्युटर हार्डवेयर र सफ्टवेयरमा डिप्लोमा हासिल गरेको छु, जसले मलाई कम्प्युटर प्रणालीको व्यवस्थापन, समस्या समाधान, र डिजिटल सामग्री निर्माणमा सशक्त आधार प्रदान गरेको छ।
+पछिल्ला तीन वर्षदेखि, म Lovely Angels English Boarding School को सूचना प्रविधि विभागमा निरन्तर रूपमा कार्यरत छु, र हाल म IT विभाग प्रमुख (Head of IT Department) को रूपमा जिम्मेवारी सम्हालिरहेको छु। यस भूमिकामा, म विद्यालयको सम्पूर्ण डिजिटल संरचना व्यवस्थापन, प्रणाली मर्मतसम्भार, र शिक्षामा प्रविधिको प्रयोगलाई अघि बढाउने कार्य सम्हाल्दछु।
+त्यसअघि, मैले २ वर्षको लागि एक स्थानीय प्रेसमा ग्राफिक तथा लेआउट डिजाइनर को रूपमा पनि काम गरेको छु, जहाँ मैले पुस्तकका आवरण, फ्लायर्स, पत्रिका लगायतका मुद्रित सामग्रीहरू डिजाइन गर्ने काम गरेको थिएँ। यस अनुभवले मेरो डिजाइन दृष्टिकोण र सृजनात्मक क्षमता अझ मजबुत बनाएको छ।
+शैक्षिक रूपमा, म हाल त्रिभुवन विश्वविद्यालयको शिक्षा संकायअन्तर्गत नेपाली साहित्यमा स्नातक तहको अध्ययन गरिरहेको छु। मेरो साहित्यप्रतिको प्रेम र प्रविधिमा दक्षता मिलेर मलाई दुवै क्षेत्रमा सिर्जनात्मक योगदान दिन सक्षम बनाउँछन्।
+म एक वेब डिजाइनर को रूपमा १० भन्दा बढी प्रोफेशनल वेबसाइट टेम्प्लेटहरू विकास गरी बिक्री गरिसकेको छु। साथै, मैले सञ्चालन गरेको baburamphuyal.com.np वेबसाइटमार्फत पाठ्यक्रम-सामग्री, शिक्षक मार्गदर्शन, नोट्स तथा साहित्यिक लेखहरू विद्यार्थी र शिक्षकहरूलाई उपलब्ध गराइरहेको छु।
+त्यस्तै, म "Hamro Computer Guru" नामक यूट्युब च्यानल पनि सञ्चालन गर्छु, जहाँ म एमएस एक्सेल, कम्प्युटरका आधारभूत ज्ञान, इन्टरनेट टुल्स तथा अन्य डिजिटल सीपहरू नेपाली भाषामा सरल ढंगले प्रस्तुत गर्दछु — जसले प्रविधि शिक्षा सबैका लागि पहुँचयोग्य बनाउँछ।
+मेरो अनुभव संक्षेपमा:
+स्कुलस्तरीय IT विभागमा ३+ वर्ष नेतृत्वदायी भूमिका (विभाग प्रमुख)
+प्रेसमा २ वर्ष ग्राफिक/लेआउट डिजाइन अनुभव
+कम्प्युटर हार्डवेयर र सफ्टवेयरमा डिप्लोमा
+HTML, CSS, JavaScript, र रिस्पोन्सिभ वेब डिजाइनमा दक्षता
+वेब र यूट्युबका लागि शैक्षिक तथा प्रविधि सामग्री निर्माण
+प्रविधि र शिक्षासँगै, म नेपाली साहित्य मा पनि सक्रिय छु — विशेषगरी ग़ज़ल लेखन र उपन्यास लेखन मा केन्द्रित। मेरा ग़ज़लहरू प्रायः व्यक्तिगत अनुभवहरूबाट प्रेरित छन्, जसलाई म भावुक र हल्का हास्यको शैलीमा प्रस्तुत गर्दछु। हाल म आफ्ना ग़ज़लहरूको एक संकलन पुस्तक तयार पार्ने प्रक्रियामा छु।
+म अनुशासन, इमानदारी र नैतिकता मा दृढ विश्वास राख्छु — विशेष गरी शिक्षाको क्षेत्रमा। म सदैव इमानदारीपूर्वक अध्ययन गर्न प्रोत्साहन गर्छु र नकलजस्तो अनैतिक अभ्यासको विरोध गर्दछु। साहित्य र प्रविधिको समायोजनमार्फत म नेपालका युवाहरूलाई प्रेरणा दिन चाहन्छु।</p>
+            <h3>परिचय </h3>
+            <p><b>बिआरपी माइलो</b> जन्म खोटाङ जिल्ला साकेला गाउँपालिका रतन्छाको मबु भन्ने ठाउँमा बि.स.२०६१ सालमा भएको हो । पेसा शिक्षक र शैक्षिक क्षेत्रमा आइटी।</p>
+        </div>
+
+
+
+
+
+
+
+
+<h3><span style="color: maroon;">Social Links</h3></span>
+<div class="social-links">
+    <a href="http://www.youtube.com/@brpmailo" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="http://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/brp.mailo" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="portfolio">
+  <h1><span style="color: red;">YouTube Channel</span></h1>
+  <div class="portfolio">
+
+
+<section id="subscribe" style="display: flex; align-items: center; justify-content: center; padding: 20px; gap: 20px; background: #f9f9f9; border-radius: 10px;">
+  <div style="flex: 1;">
+    <img src="y2.JPG" alt="Brp Mailo Channel" style="width: 100%; border-radius: 10px;">
+  </div>
+
+
+  <div style="flex: 1; text-align: center;">
+    <h2 style="color: #222; font-size: 2rem;">Brp Mailo</h2>
+    <p>Join our Educational community of over <strong>295+ subscribers</strong> learning and growing with Subjective Knowledge.</p>
+
+    <div style="font-size: 2.5rem; color: red; margin: 20px 0;">
+      <i class="fab fa-youtube"></i> 295+
+    </div>
+
+    <a href="https://www.youtube.com/@brpmailo" target="_blank" style="text-decoration: none;">
+      <button style="padding: 12px 24px; background-color: #ff0000; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+        Subscribe Now
+      </button>
+    </a>
+  </div>
+</section>
+
+
+
+
+<section id="subscribe" style="display: flex; align-items: center; justify-content: center; padding: 20px; gap: 20px; background: #f9f9f9; border-radius: 10px;">
+  <div style="flex: 1;">
+    <img src="y1.JPG" alt="Hamro Computer Guru Channel" style="width: 100%; border-radius: 10px;">
+  </div>
+
+
+  <div style="flex: 1; text-align: center;">
+    <h2 style="color: #222; font-size: 2rem;">Hamro Computer Guru</h2>
+    <p>Join our Educational community of over <strong>95+ subscribers</strong> learning and growing with Computer Basics like: MS Word, MS Excel, MS Powerpoint, Photoshop, Internet, Software, Hardware etc.</p>
+
+    <div style="font-size: 2.5rem; color: red; margin: 20px 0;">
+      <i class="fab fa-youtube"></i> 95+
+    </div>
+
+    <a href="http://www.youtube.com/@ComputerMsaterBrp" target="_blank" style="text-decoration: none;">
+      <button style="padding: 12px 24px; background-color: #ff0000; color: #fff; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">
+        Subscribe Now
+      </button>
+    </a>
+  </div>
+</section>
+
+
+
+  <h1><span style="color: red;">Web Templets</span></h1>
+  <div class="portfolio">
+
+
+    <div class="portfolio-item">
+      <h3>Nabin Phuyal</h3>
+      <img src="n.jpg" alt="Website 1">
+      <p>Official Website From Nabin Phuyal</p>
+      <a class="visit-button" href="https://phuyalnabin.com.np" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Baburam Phuyal</h3>
+      <img src="1.JPG" alt="Website 2">
+      <p>Official Website From Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Sahityik Section</h3>
+      <img src="2.JPG" alt="Website 3">
+      <p>Literary site hosted by Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/sahitik.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Educational Notes</h3>
+      <img src="3.JPG" alt="Website 4">
+      <p>Notes and textbooks for students Created by Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/saikshik.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Quiz Section</h3>
+      <img src="4.JPG" alt="Website 5">
+      <p>General knowledge quiz portal hosted by Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/quiz%20section.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Teacher Profile</h3>
+      <img src="5.JPG" alt="Website 6">
+      <p>About teaching staff and their roles assigning by Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/teacher.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Login Page</h3>
+      <img src="6.JPG" alt="Website 7">
+      <p>Secure login for users and admins from your school to Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/login.html" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="portfolio-item">
+      <h3>Computer Notes</h3>
+      <img src="7.JPG" alt="Website 8">
+      <p>Computer science study materials Course design by Brp Mailo Digital Institute</p>
+      <a class="visit-button" href="https://baburamphuyal.com.np/computer.html" target="_blank">Visit Site</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+     
+
+
+<div id="backToTop" onclick="scrollToTop()">&#8679;</div>
+
+
+
+
+
+    <section id="contact">
+    <h2><span style="color: maroon;">Contact for Brpmailo</span></h2>
+    <p>📞 Phone: +977-9844078996</p>
+    <p>📧 Email: brpmailobaburam@gmail.com</p>
+    
+
+<h2>Do you want to directly contact Brpmailo?</h2>
+
+<div class="option-container">
+  <button class="circle-btn yes-btn" onclick="toggleForm('yes')">Yes</button>
+  <button class="circle-btn no-btn" onclick="toggleForm('no')">No</button>
+</div>
+
+
+
+<div id="formContainer">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftW09ExCeiHjB2to6Ham-jhM226BaAZ44MdwNLsN-eyqytiQ/viewform?embedded=true"
+          width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">
+    Loading…
+  </iframe>
+</div>
+</section>
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 Designer All rights reserved</p>
+        <p>Website Design by <a href="#">Brpmailo</a></p>
+    </footer>
+
+
+
+
+
+
+<script>
+  function toggleForm(choice) {
+    const formContainer = document.getElementById("formContainer");
+    if (choice === 'yes') {
+      formContainer.style.display = "block";
+    } else {
+      formContainer.style.display = "none";
+    }
+  }
+</script>
+
+
+
+<script>
+  function openSite(url) {
+    window.open(url, "_blank");
+  }
+</script>
+
+
+
+
+
+
+
+    <script>
+        function showDetails(language) {
+            var englishInfo = document.getElementById("extra-info-english");
+            var nepaliInfo = document.getElementById("extra-info-nepali");
+
+            if (language === 'english') {
+                englishInfo.classList.toggle("hidden");
+                nepaliInfo.classList.add("hidden");
+            } else {
+                nepaliInfo.classList.toggle("hidden");
+                englishInfo.classList.add("hidden");
+            }
+        }
+ function openSite(url) {
+            window.open(url, "_blank");
+        }
+
+
+
+
+
+
+
+  let countingStarted = false;
+
+function animateSubscribers(start, end, duration) {
+    let current = start;
+    const increment = (end - start) / (duration / 50);
+    const counter = document.getElementById("subscriber-count");
+
+    function updateCount() {
+        current += increment;
+        if (current >= end) {
+            current = end;
+        }
+        counter.innerText = Math.floor(current);
+
+        if (current < end) {
+            requestAnimationFrame(updateCount);
+        }
+    }
+    updateCount();
+}
+
+function startCounting() {
+    if (!countingStarted) {
+        countingStarted = true;
+        animateSubscribers(50, 1000, 5000); // 8 seconds duration
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounting();
+        }
+    });
+}, { threshold: 0.5 });
+
+observer.observe(document.getElementById("portfolio"));
+
+
+    </script>
+</body>
+</html>
+
+
